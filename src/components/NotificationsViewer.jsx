@@ -12,7 +12,7 @@ export default class NotificationsViewer extends React.Component {
 
   async componentDidMount () {
     let { count } = await NotificationsService.GetNotifications();
-    console.log('componentDidMount count:', count);
+    // console.log('componentDidMount count:', count);
 
     this.setState({
       count
@@ -20,7 +20,7 @@ export default class NotificationsViewer extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log('componentDidUpdate count:', this.state.count);
+    // console.log('componentDidUpdate count:', this.state.count);
   }
 
   render() {
